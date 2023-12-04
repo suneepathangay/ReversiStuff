@@ -1,0 +1,3719 @@
+Strategy transcript:
+Chosen move: 5 4
+getCoordinates called
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getCoordinates called
+
+getLength called
+4
+
+getTileAt called
+0 0
+
+getTileAt called
+0 1
+
+getTileAt called
+0 2
+
+getTileAt called
+0 3
+
+getTileAt called
+1 0
+
+getTileAt called
+1 1
+
+getTileAt called
+1 2
+
+getTileAt called
+1 3
+
+getTileAt called
+1 4
+
+getTileAt called
+2 0
+
+getTileAt called
+2 1
+
+getTileAt called
+2 2
+
+getTileAt called
+2 3
+
+getTileAt called
+2 4
+
+getTileAt called
+2 5
+
+getTileAt called
+3 0
+
+getTileAt called
+3 1
+
+getTileAt called
+3 2
+
+getTileAt called
+3 3
+
+getTileAt called
+3 4
+
+getTileAt called
+3 5
+
+getTileAt called
+3 6
+
+getTileAt called
+4 1
+
+getTileAt called
+4 2
+
+getTileAt called
+4 3
+
+getTileAt called
+4 4
+
+getTileAt called
+4 5
+
+getTileAt called
+4 6
+
+getTileAt called
+5 2
+
+getTileAt called
+5 3
+
+getTileAt called
+5 4
+
+getTileAt called
+5 5
+
+getTileAt called
+5 6
+
+getTileAt called
+6 3
+
+getTileAt called
+6 4
+
+getTileAt called
+6 5
+
+getTileAt called
+6 6
+
+getTurn called
+BLACK
+
+placeTile called
+
+Placed tile at row: 5 col: 4
+
+
