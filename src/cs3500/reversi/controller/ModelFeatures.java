@@ -18,7 +18,7 @@ public interface ModelFeatures {
    */
   void notifyPlayerChanged(Message player);
 
-  void notifyGameOver();
+  void notifyGameOver(String winner);
 
 
   /**

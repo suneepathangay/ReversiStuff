@@ -205,9 +205,24 @@ public class BasicReversi implements Reversi {
   private void notifyGameOver(){
     if(this.isGameOver()){
       for(ModelFeatures feature:listeners){
-        feature.notifyGameOver();
+        String winner=getWinner();
+        feature.notifyGameOver(winner);
       }
     }
+  }
+
+  private String getWinner(){
+    StringBuilder message=new StringBuilder();
+
+    Tuple<Integer,Integer> scores=this.getScore();
+    if(scores.getFirst()> scores.getSecond()){
+      message.append("Player Two Won");
+    } else if (scores.getFirst()<scores.getSecond()) {
+      message.append("Player One Won");
+    }else{
+      message.append("Game tied");
+    }
+    return message.toString();
   }
 
 

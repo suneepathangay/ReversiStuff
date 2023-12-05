@@ -69,8 +69,8 @@ public class Frame extends JFrame implements IFrame {
   }
 
   @Override
-  public void notifyGameOver() {
-    this.panel.notifyGameOver();
+  public void notifyGameOver(String winner) {
+    this.panel.notifyGameOver(winner);
   }
 
 

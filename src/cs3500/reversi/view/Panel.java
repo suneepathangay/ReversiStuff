@@ -198,9 +198,9 @@ public class Panel extends JPanel implements IPanel {
   }
 
   @Override
-  public void notifyGameOver() {
+  public void notifyGameOver(String winner) {
     JOptionPane optionPane = new JOptionPane(
-            "Game Over",
+            winner,
             JOptionPane.INFORMATION_MESSAGE,
             JOptionPane.DEFAULT_OPTION,
             null,

@@ -28,5 +28,5 @@ public interface IPanel {
    */
   void notifyPlayerChanged(String message);
 
-  void notifyGameOver();
+  void notifyGameOver(String winner);
 }

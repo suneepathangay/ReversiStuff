@@ -101,8 +101,8 @@ public class Controller implements Features, ModelFeatures, PlayerFeatures {
   }
 
   @Override
-  public void notifyGameOver() {
-    this.view.notifyGameOver();
+  public void notifyGameOver(String winner) {
+    this.view.notifyGameOver(winner);
   }
 
   @Override
