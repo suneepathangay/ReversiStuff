@@ -10,10 +10,7 @@ import cs3500.reversi.model.BasicReversi;
 import cs3500.reversi.model.CaptureCornerStrategy;
 import cs3500.reversi.model.CaptureStrategy;
 import cs3500.reversi.model.Colors;
-import cs3500.reversi.model.ReadonlyReversiModel;
 import cs3500.reversi.model.Reversi;
-import cs3500.reversi.provider.strategy.MaximizeCaptured;
-import cs3500.reversi.provider.strategy.ReversiStrategy;
 import cs3500.reversi.view.Frame;
 
 /**
@@ -21,7 +18,7 @@ import cs3500.reversi.view.Frame;
  */
 public class ReversiRunner {
 
-  static private Player createPlayer(String playerInput, ReadonlyReversiModel model, Colors color) {
+  static private Player createPlayer(String playerInput, Reversi model, Colors color) {
 
     switch (playerInput) {
 
@@ -34,8 +31,6 @@ public class ReversiRunner {
         return new AIPlayer(model, new CaptureCornerStrategy(), color);
       case "avoidCornerStrategy":
         return new AIPlayer(model, new AvoidCornerStrategy(), color);
-      case " providerStrategy1":
-        return new AIPlayer(model,new MaximizeCaptured(), color);
       default:
         throw new IllegalStateException("Unexpected value: " + playerInput);
     }

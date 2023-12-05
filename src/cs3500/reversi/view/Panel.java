@@ -43,7 +43,7 @@ public class Panel extends JPanel implements IPanel {
    */
   public Panel(ReadonlyReversiModel model) {
     this.readOnlyGame = model;
-    this.currBoard = readOnlyGame.getBoard();
+    this.currBoard = readOnlyGame.getCurrBoard();
     setFocusable(true);
     requestFocusInWindow();
   }
@@ -173,7 +173,7 @@ public class Panel extends JPanel implements IPanel {
   @Override
   public void notifyGame() {
 
-    this.currBoard = readOnlyGame.getBoard();
+    this.currBoard = readOnlyGame.getCurrBoard();
     repaint();
 
   }
@@ -237,7 +237,7 @@ public class Panel extends JPanel implements IPanel {
     Graphics2D g2d = (Graphics2D) g;
     g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-    List<List<IDisc>> board = readOnlyGame.getBoard();
+    List<List<IDisc>> board = readOnlyGame.getCurrBoard();
     int sideLength = readOnlyGame.getLength();
     int numRows = readOnlyGame.getNumRows();
     int hexSize = calculateHexSize(numRows);

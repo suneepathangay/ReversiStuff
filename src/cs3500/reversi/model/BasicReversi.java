@@ -434,7 +434,7 @@ public class BasicReversi implements Reversi {
    * @return a board.
    */
   @Override
-  public List<List<IDisc>> getBoard() {
+  public List<List<IDisc>> getCurrBoard() {
     checkIsGameStarted();
     List<List<IDisc>> newBoard = new ArrayList<>();
 

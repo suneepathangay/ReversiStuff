@@ -28,6 +28,7 @@ public class ReversiAdapter implements PlayerFeatures {
 
   private BoardPosn convertRowColtoBoardPosn(List<Tuple<Integer, Integer>> coordinates) {
     //
+    return null;
   }
 
 

@@ -34,7 +34,7 @@ public interface ReadonlyReversiModel {
    *
    * @return a list of lists representing the game board
    */
-  List<List<IDisc>> getBoard();
+  List<List<IDisc>> getCurrBoard();
 
   /**
    * Retrieves the length of the board.
