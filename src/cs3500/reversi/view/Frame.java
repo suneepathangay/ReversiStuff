@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 
 import cs3500.reversi.controller.Features;
 
+import cs3500.reversi.model.ReadonlyReversiModel;
 import cs3500.reversi.model.Reversi;
 
 /**

@@ -74,6 +74,7 @@ public class ModelAdapter implements ReadOnlyReversiModel {
       ourToProv.put(ourCoor,proCoord);
       provToOur.put(proCoord,ourCoor);
     }
+
   }
 
   @Override

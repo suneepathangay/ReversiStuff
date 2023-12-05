@@ -79,6 +79,9 @@ public interface ReadonlyReversiModel {
    */
   boolean isValidMove(Tuple<Integer,Integer> coor);
 
-
+  /**
+   * Method to start the game
+   */
+  void startGame();
 
 }
