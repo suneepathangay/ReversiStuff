@@ -68,5 +68,10 @@ public class Frame extends JFrame implements IFrame {
     frame.setTitle(player);
   }
 
+  @Override
+  public void notifyGameOver() {
+    this.panel.notifyGameOver();
+  }
+
 
 }

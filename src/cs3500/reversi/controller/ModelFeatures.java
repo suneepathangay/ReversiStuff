@@ -18,6 +18,8 @@ public interface ModelFeatures {
    */
   void notifyPlayerChanged(Message player);
 
+  void notifyGameOver();
+
 
   /**
    * Sets the controller to a player in the model.
@@ -36,6 +38,11 @@ public interface ModelFeatures {
    */
   void setTitle(Message player);
 
+  /**
+   * Returns if the player is human
+   * @return if the player is human
+   */
+  boolean isHuman();
 
 
 }

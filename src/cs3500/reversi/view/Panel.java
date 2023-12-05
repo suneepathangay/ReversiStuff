@@ -197,6 +197,23 @@ public class Panel extends JPanel implements IPanel {
     dialog.setVisible(true);
   }
 
+  @Override
+  public void notifyGameOver() {
+    JOptionPane optionPane = new JOptionPane(
+            "Game Over",
+            JOptionPane.INFORMATION_MESSAGE,
+            JOptionPane.DEFAULT_OPTION,
+            null,
+            new Object[]{},
+
+            null);
+    JDialog dialog = optionPane.createDialog(this, "Game Over");
+    dialog.setModal(true);
+
+    dialog.setLocationRelativeTo(this);
+    dialog.setVisible(true);
+  }
+
   private boolean isClickInsideHexagon(
           double clickX, double clickY, double centerX, double centerY, int size) {
 

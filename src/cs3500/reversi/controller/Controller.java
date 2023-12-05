@@ -77,6 +77,11 @@ public class Controller implements Features, ModelFeatures, PlayerFeatures {
 
   }
 
+  @Override
+  public boolean isHuman() {
+    return player.isHuman();
+  }
+
 
   @Override
   public void passMove() {
@@ -96,7 +101,16 @@ public class Controller implements Features, ModelFeatures, PlayerFeatures {
   }
 
   @Override
+  public void notifyGameOver() {
+    this.view.notifyGameOver();
+  }
+
+  @Override
   public void makeMove(Tuple<Integer, Integer> coordinate) {
-    model.placeTile(coordinate.getFirst(), coordinate.getSecond(), player.getColor());
+    if(coordinate!=null) {
+      model.placeTile(coordinate.getFirst(), coordinate.getSecond(), player.getColor());
+    }else{
+      model.passMove();
+    }
   }
 }

@@ -98,8 +98,10 @@ public class BasicReversi implements Reversi {
       return true;
     }
 
+    System.out.println("executing");
     return checkBoardFull() || checkForConsecPasses();
     //loop over and check if the board is empty
+
   }
 
   /**
@@ -143,7 +145,7 @@ public class BasicReversi implements Reversi {
   @Override
   public void placeTile(int row, int col, Colors currTurn) {
 
-    //System.out.println(turn);
+    notifyGameOver();
 
     //these are not the indexes they are the new coordiantes in the coordiante system
     Tuple<Integer, Integer> coordinate = new Tuple<Integer, Integer>(row, col);
@@ -181,7 +183,7 @@ public class BasicReversi implements Reversi {
 
   private void notifyListenersPlayer(Message player) {
     for (ModelFeatures listener : listeners) {
-      if (listener.getPlayer() == currPlayer) {
+      if (listener.getPlayer() == currPlayer && listener.isHuman()) {
         listener.notifyPlayerChanged(currPlayer);
       }
     }
@@ -196,6 +198,14 @@ public class BasicReversi implements Reversi {
     for (Player player : this.playerListeners) {
       if (player.getColor() == turn) {
         player.notifyOfMove();
+      }
+    }
+  }
+
+  private void notifyGameOver(){
+    if(this.isGameOver()){
+      for(ModelFeatures feature:listeners){
+        feature.notifyGameOver();
       }
     }
   }
@@ -348,6 +358,7 @@ public class BasicReversi implements Reversi {
   @Override
   public void passMove() {
     checkIsGameStarted();
+    notifyGameOver();
     if (checkPossibleMovesColor(turn)) {
       throw new IllegalStateException("you cant pass the move");
     }

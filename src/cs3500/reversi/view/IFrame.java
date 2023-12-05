@@ -35,4 +35,6 @@ public interface IFrame {
    */
   void setTitle(String player);
 
+  void notifyGameOver();
+
 }

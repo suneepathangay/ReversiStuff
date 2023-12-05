@@ -1,6 +1,7 @@
 package cs3500.reversi.provider.model;
 
 import cs3500.reversi.provider.controller.ReversiController;
+import cs3500.reversi.provider.controller.ReversiPlayer;
 
 
 /**

@@ -29,6 +29,8 @@ public interface Player {
 
   void addListener(PlayerFeatures listener);
 
+  boolean isHuman();
+
 
 
 }

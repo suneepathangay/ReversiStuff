@@ -12,9 +12,12 @@ public class HumanPlayer implements Player {
 
   private final Colors color;
 
+  private boolean isHuman;
+
 
   public HumanPlayer(ReadonlyReversiModel model, Colors color) {
     this.color = color;
+    this.isHuman=true;
   }
 
 
@@ -32,6 +35,11 @@ public class HumanPlayer implements Player {
   @Override
   public void addListener(PlayerFeatures listener) {
     //nothing because the player interacts with the view
+  }
+
+  @Override
+  public boolean isHuman() {
+    return isHuman;
   }
 
 }

@@ -27,4 +27,6 @@ public interface IPanel {
    * Notifies the view that the player has changed.
    */
   void notifyPlayerChanged(String message);
+
+  void notifyGameOver();
 }

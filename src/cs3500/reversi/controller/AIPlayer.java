@@ -4,6 +4,7 @@ package cs3500.reversi.controller;
 import cs3500.reversi.model.Colors;
 import cs3500.reversi.model.Reversi;
 import cs3500.reversi.model.Strategy;
+import cs3500.reversi.model.Tuple;
 
 /**
  * AI player class to implement different strategies.
@@ -20,6 +21,8 @@ public class AIPlayer implements Player {
 
   private Strategy strategy;
 
+  private boolean isHuman;
+
 
   /**
    * Constructor to create an AI player object.
@@ -32,6 +35,7 @@ public class AIPlayer implements Player {
     this.model = model;
     this.strategy = strategy;
     this.color = color;
+    this.isHuman=false;
   }
 
   @Override
@@ -42,13 +46,19 @@ public class AIPlayer implements Player {
 
   @Override
   public void notifyOfMove() {
-    this.listener.makeMove(strategy.chooseMove(model, color));
+    Tuple<Integer,Integer> move=strategy.chooseMove(model, color);
+    this.listener.makeMove(move);
 
   }
 
   @Override
   public void addListener(PlayerFeatures listener) {
     this.listener = listener;
+  }
+
+  @Override
+  public boolean isHuman() {
+    return this.isHuman;
   }
 
 
