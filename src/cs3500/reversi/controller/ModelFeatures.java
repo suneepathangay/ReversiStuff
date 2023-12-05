@@ -18,6 +18,10 @@ public interface ModelFeatures {
    */
   void notifyPlayerChanged(Message player);
 
+  /**
+   * Notifies the listener that the game is over.
+   * @param winner the winner.
+   */
   void notifyGameOver(String winner);
 
 

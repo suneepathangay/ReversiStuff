@@ -59,6 +59,11 @@ public class MockController implements Features, ModelFeatures {
   }
 
   @Override
+  public void notifyGameOver(String winner) {
+
+  }
+
+  @Override
   public void setPlayer(Message player) {
     append("setPlayer called\n");
   }
@@ -72,6 +77,11 @@ public class MockController implements Features, ModelFeatures {
   @Override
   public void setTitle(Message player) {
     append("setTitle called\n");
+  }
+
+  @Override
+  public boolean isHuman() {
+    return false;
   }
 
 }

@@ -29,6 +29,10 @@ public interface Player {
 
   void addListener(PlayerFeatures listener);
 
+  /**
+   * Determines if a player is human or not
+   * @return if the player is human or not
+   */
   boolean isHuman();
 
 
