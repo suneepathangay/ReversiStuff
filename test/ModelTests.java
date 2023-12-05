@@ -29,7 +29,7 @@ public class ModelTests {
   @Test
   public void getBoard() {
     BasicReversi game = new BasicReversi(6);
-    game.getBoard();
+    game.getCurrBoard();
     TextualReversiView view = new TextualReversiView(game);
     System.out.println(view);
     Assert.assertEquals(Colors.WHITE,

@@ -12,7 +12,7 @@ import cs3500.reversi.provider.model.IBoard;
 import cs3500.reversi.provider.model.ModelStatus;
 import cs3500.reversi.provider.model.PlayerColor;
 import cs3500.reversi.provider.model.ReadOnlyReversiModel;
-import cs3500.reversi.provider.model.ReversiModel;
+
 
 
 //TODO figure out how to convert thier coordiantes to my coordinaes
@@ -27,10 +27,28 @@ public class ModelAdapter implements ReadOnlyReversiModel {
     this.model=model;
   }
 
-  //converts their coordinates to mine
-  private Tuple<Integer,Integer> convertProviderCoord(BoardPosn coor){
+  //TODO fix the method to change from their coordainte to the our coordinate
+  public Tuple<Integer,Integer> convertProviderCoord(BoardPosn coor){
+      int startIndex=this.getBoardSize()/2;
+      int startCol=0;
+      //creating the first half of the board
 
+    List<List<BoardPosn>> board=new ArrayList<>();
 
+    for(int i=0; i<startIndex; i++){
+      List<BoardPosn> row=new ArrayList<>();
+      for(int j=startIndex; i<this.getBoardSize(); j++){
+        //j is the row
+        BoardPosn pos=new BoardPosn(j,startCol);
+        row.add(pos);
+      }
+      board.add(row);
+      startCol++;
+    }
+
+    for(int i=0; i<startIndex; i++){
+
+    }
 
 
     return null;

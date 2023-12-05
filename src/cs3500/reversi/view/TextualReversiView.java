@@ -63,8 +63,8 @@ public class TextualReversiView implements ReversiView {
 
     int numSpaces = model.getLength() - 1;
     int index = 0;
-    while (index < model.getBoard().size() / 2) {
-      List<IDisc> row = model.getBoard().get(index);
+    while (index < model.getCurrBoard().size() / 2) {
+      List<IDisc> row = model.getCurrBoard().get(index);
       String newRow = addSpaces(numSpaces, row);
       sb.append(newRow + "\n");
       numSpaces--;
@@ -73,8 +73,8 @@ public class TextualReversiView implements ReversiView {
 
     int numBottomSpaces = 0;
 
-    while (index < model.getBoard().size()) {
-      List<IDisc> row = model.getBoard().get(index);
+    while (index < model.getCurrBoard().size()) {
+      List<IDisc> row = model.getCurrBoard().get(index);
       String newRow = addSpaces(numBottomSpaces, row);
       sb.append(newRow + "\n");
       numBottomSpaces++;

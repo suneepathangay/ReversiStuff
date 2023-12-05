@@ -40,6 +40,11 @@ public class MockFrame implements IFrame {
     this.title = player;
   }
 
+  @Override
+  public void notifyGameOver(String winner) {
+
+  }
+
   public List<String> getPlayerChangeMessages() {
     return playerChangeMessages;
   }

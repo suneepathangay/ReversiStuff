@@ -35,5 +35,10 @@ public class MockPlayer implements Player {
     //pass
   }
 
+  @Override
+  public boolean isHuman() {
+    return false;
+  }
+
 }
 

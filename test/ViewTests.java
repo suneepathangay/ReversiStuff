@@ -17,7 +17,7 @@ public class ViewTests {
     TextualReversiView view = new TextualReversiView(model);
     System.out.println(view);
     //get tile at 5,4 Inital piece
-    Assert.assertEquals(model.getBoard().get(5).get(4).getColor(),
+    Assert.assertEquals(model.getCurrBoard().get(5).get(4).getColor(),
             Colors.WHITE);
   }
 
@@ -27,6 +27,6 @@ public class ViewTests {
     TextualReversiView view = new TextualReversiView(model);
     System.out.println(view);
     //get tile at 3,2 Inital piece
-    Assert.assertEquals(model.getBoard().get(3).get(2).getColor(), Colors.WHITE);
+    Assert.assertEquals(model.getCurrBoard().get(3).get(2).getColor(), Colors.WHITE);
   }
 }

@@ -72,10 +72,11 @@ public class MockModel implements Reversi {
     return template.getTurn();
   }
 
+
   @Override
-  public List<List<IDisc>> getBoard() {
+  public List<List<IDisc>> getCurrBoard() {
     append("getBoard called\n");
-    return template.getBoard();
+    return template.getCurrBoard();
   }
 
   @Override

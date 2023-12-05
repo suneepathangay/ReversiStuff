@@ -89,7 +89,7 @@ public class MockTests {
 
     mockModel.getScore();
     mockModel.getTurn();
-    mockModel.getBoard();
+    mockModel.getCurrBoard();
     mockModel.getTileAt(5, 4);
 
     String output = mockAppendable.toString();
