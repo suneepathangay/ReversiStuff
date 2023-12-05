@@ -65,7 +65,7 @@ public interface ReadOnlyReversiModel {
   PlayerColor getWinner() throws IllegalStateException;
 
   /**
-   * Returns the player whose token is at the given position.
+   * Returns the player whose token is at the iven position.
    *
    * @param posn of one of the hexagons that make up the board
    * @return the player  whose token is at the given position.

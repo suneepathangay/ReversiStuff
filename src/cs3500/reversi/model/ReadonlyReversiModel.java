@@ -73,6 +73,12 @@ public interface ReadonlyReversiModel {
    */
   List<Tuple<Integer, Integer>> getCoordinates();
 
+  /**
+   * Determines if the propposed move is valid.
+   * @return a boolean depending on if move is valid ro not
+   */
+  boolean isValidMove(Tuple<Integer,Integer> coor);
+
 
 
 }

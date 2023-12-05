@@ -583,6 +583,14 @@ public class BasicReversi implements Reversi {
     return boardCoordinates;
   }
 
+  @Override
+  public boolean isValidMove(Tuple<Integer,Integer> coor) {
+      if(!getValidAxes(coor,turn).isEmpty()){
+        return true;
+      }
+      return false;
+  }
+
 
   private void placeInitialPieces() {
 
