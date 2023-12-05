@@ -28,14 +28,14 @@ public class ReversiAdapter implements PlayerFeatures {
   }
 
   private BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
-    Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = convertRowColBoardtoCubeCoordBoard();
+    Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = convertRowColBoardtoBoardPosnBoard();
     return hexGridMap.get(coordinate);
   }
 
-  private Map<Tuple<Integer, Integer>, BoardPosn> convertRowColBoardtoCubeCoordBoard() {
+  private Map<Tuple<Integer, Integer>, BoardPosn> convertRowColBoardtoBoardPosnBoard() {
     int diameter = model.getNumRows();
     List<Tuple<Integer, Integer>> rowColList = generateRowColCoordinates(diameter);
-    List<BoardPosn> cubeList = generateCubeCoordinates(diameter);
+    List<BoardPosn> cubeList = generateBoardPosnCoordinates(diameter);
 
     Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = new HashMap<>();
     for (int i = 0; i < rowColList.size(); i++) {
@@ -65,7 +65,7 @@ public class ReversiAdapter implements PlayerFeatures {
     return rowColCoordinates;
   }
 
-  private static List<BoardPosn> generateCubeCoordinates(int diameter) {
+  private static List<BoardPosn> generateBoardPosnCoordinates(int diameter) {
     List<BoardPosn> cubeCoordinates = new ArrayList<>();
     int radius = (diameter - 1) / 2;
 
