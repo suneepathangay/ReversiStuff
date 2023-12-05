@@ -7,16 +7,16 @@ import java.util.Map;
 
 import cs3500.reversi.model.BasicReversi;
 import cs3500.reversi.model.Tuple;
-import cs3500.reversi.provider.controller.ReversiController;
 import cs3500.reversi.provider.model.BoardPosn;
+import cs3500.reversi.provider.view.PlayerAction;
 
 public class ReversiAdapter implements PlayerFeatures {
 
-  ReversiController providerController;
+  PlayerAction providerPlayerAction;
   BasicReversi model;
 
-  public ReversiAdapter(ReversiController providerController, BasicReversi model){
-    this.providerController = providerController;
+  public ReversiAdapter(PlayerAction providerPlayerAction, BasicReversi model){
+    this.providerPlayerAction = providerPlayerAction;
     this.model = model;
   }
 
@@ -24,8 +24,7 @@ public class ReversiAdapter implements PlayerFeatures {
   @Override
   public void makeMove(Tuple<Integer, Integer> coordinate) {
     BoardPosn boardPosn = tupleToBoardPosn(coordinate);
-    providerController.moveMade(boardPosn);
-
+    providerPlayerAction.chooseMove(boardPosn);
   }
 
   private BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
