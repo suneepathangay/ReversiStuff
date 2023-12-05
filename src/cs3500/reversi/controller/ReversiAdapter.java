@@ -28,11 +28,13 @@ public class ReversiAdapter implements PlayerFeatures {
   }
 
   private BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
-    Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = convertRowColBoardtoBoardPosnBoard();
+    Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = mapRowColBoardtoBoardPosnBoard();
     return hexGridMap.get(coordinate);
   }
 
-  private Map<Tuple<Integer, Integer>, BoardPosn> convertRowColBoardtoBoardPosnBoard() {
+
+
+  private Map<Tuple<Integer, Integer>, BoardPosn> mapRowColBoardtoBoardPosnBoard() {
     int diameter = model.getNumRows();
     List<Tuple<Integer, Integer>> rowColList = generateRowColCoordinates(diameter);
     List<BoardPosn> cubeList = generateBoardPosnCoordinates(diameter);
