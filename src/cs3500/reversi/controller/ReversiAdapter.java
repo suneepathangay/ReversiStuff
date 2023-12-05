@@ -71,9 +71,12 @@ public class ReversiAdapter implements PlayerFeatures {
 
     for (int r = -radius; r <= radius; r++) {
       for (int q = -radius; q <= radius; q++) {
+        int newR = r + radius;
+        int newQ = q + radius;
         int s = -r - q;
         if (Math.abs(s) <= radius) {
-          cubeCoordinates.add(new BoardPosn(q, r, s));
+          int newS = - newQ - newR;
+          cubeCoordinates.add(new BoardPosn(newQ, newR, newS));
         }
       }
     }
