@@ -6,28 +6,57 @@ import java.util.List;
 import java.util.Map;
 
 import cs3500.reversi.model.BasicReversi;
+import cs3500.reversi.model.ModelAdapter;
+import cs3500.reversi.model.ReadonlyReversiModel;
 import cs3500.reversi.model.Tuple;
 import cs3500.reversi.provider.model.BoardPosn;
 import cs3500.reversi.provider.view.PlayerAction;
 
-public class ReversiAdapter implements PlayerFeatures {
+public class Converter {
 
-  PlayerAction providerPlayerAction;
-  BasicReversi model;
 
-  public ReversiAdapter(PlayerAction providerPlayerAction, BasicReversi model){
-    this.providerPlayerAction = providerPlayerAction;
+  ReadonlyReversiModel model;
+
+
+
+
+
+  public Converter(ReadonlyReversiModel model){
     this.model = model;
   }
 
-
-  @Override
-  public void makeMove(Tuple<Integer, Integer> coordinate) {
-    BoardPosn boardPosn = tupleToBoardPosn(coordinate);
-    providerPlayerAction.chooseMove(boardPosn);
+  /**
+   * Converts the provider coordiante to our coordinate
+   * @param coordinate
+   * @return
+   */
+  public Tuple<Integer,Integer> boardPosntoTuple(BoardPosn coordinate) {
+    Map<BoardPosn, Tuple<Integer, Integer>> hexGridMap = mapBoardPosnBoardtoRowColBpard();
+    return hexGridMap.get(coordinate);
   }
 
-  private BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
+
+
+  private Map<BoardPosn, Tuple<Integer, Integer>> mapBoardPosnBoardtoRowColBpard() {
+    int diameter = model.getNumRows();
+    List<Tuple<Integer, Integer>> rowColList = generateRowColCoordinates(diameter);
+    List<BoardPosn> cubeList = generateBoardPosnCoordinates(diameter);
+
+    Map<BoardPosn, Tuple<Integer, Integer>> hexGridMap = new HashMap<>();
+    for (int i = 0; i < rowColList.size(); i++) {
+      hexGridMap.put(cubeList.get(i), rowColList.get(i));
+    }
+
+    return hexGridMap;
+  }
+
+  /**
+   * Converts our coordinate to their coordinate syste
+   * @param coordinate our coordinate
+   * @return their coordinate
+   */
+
+  public BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
     Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = mapRowColBoardtoBoardPosnBoard();
     return hexGridMap.get(coordinate);
   }
@@ -47,7 +76,7 @@ public class ReversiAdapter implements PlayerFeatures {
     return hexGridMap;
   }
 
-  private static List<Tuple<Integer, Integer>> generateRowColCoordinates(int diameter) {
+  private List<Tuple<Integer, Integer>> generateRowColCoordinates(int diameter) {
     List<Tuple<Integer, Integer>> rowColCoordinates = new ArrayList<>();
     int radius = (diameter - 1) / 2;
 
@@ -67,7 +96,7 @@ public class ReversiAdapter implements PlayerFeatures {
     return rowColCoordinates;
   }
 
-  private static List<BoardPosn> generateBoardPosnCoordinates(int diameter) {
+  private List<BoardPosn> generateBoardPosnCoordinates(int diameter) {
     List<BoardPosn> cubeCoordinates = new ArrayList<>();
     int radius = (diameter - 1) / 2;
 
@@ -88,8 +117,10 @@ public class ReversiAdapter implements PlayerFeatures {
 
 
 
-
-
 }
+
+
+
+
 
 

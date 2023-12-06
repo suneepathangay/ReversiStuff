@@ -1,21 +1,24 @@
 package cs3500.reversi.model;
 
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
+
+import cs3500.reversi.controller.Converter;
 import cs3500.reversi.provider.model.BoardPosn;
 import cs3500.reversi.provider.model.GameStatus;
 import cs3500.reversi.provider.model.IBoard;
 import cs3500.reversi.provider.model.ModelStatus;
 import cs3500.reversi.provider.model.PlayerColor;
 import cs3500.reversi.provider.model.ReadOnlyReversiModel;
-
+import cs3500.reversi.view.IBoardImpl;
 
 
 //TODO figure out how to convert thier coordiantes to my coordinaes
+
+//TODO Finish Model Adapter
+
+//TODO Finish the IBoard Implementation
 
 //readonlyReversi their model
 public class ModelAdapter implements ReadOnlyReversiModel {
@@ -23,59 +26,13 @@ public class ModelAdapter implements ReadOnlyReversiModel {
   //my model
   private ReadonlyReversiModel model;
 
-  private Map<Tuple<Integer,Integer>,BoardPosn> ourToProv=new HashMap<>();
-
-  private Map<BoardPosn,Tuple<Integer,Integer>> provToOur=new HashMap<>();
-
+  private Converter converter;
   public ModelAdapter(ReadonlyReversiModel model){
     this.model=model;
-    convertCoor();
+    this.converter=new Converter(model);
   }
 
-  //TODO fix the method to change from their coordainte to the our coordinate
-  private void convertCoor(){
 
-    Map<Tuple<Integer,Integer>,BoardPosn> mapCoord=new HashMap<>();
-
-    int rowStart=this.getBoardSize()/2;
-    int colStart=0;
-
-    List<BoardPosn> providerCoord=new ArrayList<>();
-
-    for(int i=0; i<(this.getBoardSize()/2)+1; i++){
-      List<BoardPosn> row=new ArrayList<>();
-      for(int j=rowStart; j<this.getBoardSize(); j++){
-        BoardPosn pos=new BoardPosn(j,colStart);
-        providerCoord.add(pos);
-      }
-
-      colStart++;
-      rowStart--;
-    }
-    //rowStart is now 0
-    //colStart is now 3
-    int newStart=getBoardSize()-1;
-
-    for(int i=0; i<this.getBoardSize()/2; i++){
-      List<BoardPosn> row=new ArrayList<>();
-      for(int j=rowStart; j<newStart; j++){
-        BoardPosn pos=new BoardPosn(j,colStart);
-        providerCoord.add(pos);
-      }
-      colStart++;
-      newStart--;
-    }
-
-    List<Tuple<Integer,Integer>> ourCoord=this.model.getCoordinates();
-
-    for(int i=0; i<ourCoord.size(); i++){
-      BoardPosn proCoord=providerCoord.get(i);
-      Tuple<Integer,Integer> ourCoor=ourCoord.get(i);
-      ourToProv.put(ourCoor,proCoord);
-      provToOur.put(proCoord,ourCoor);
-    }
-
-  }
 
   @Override
   public int getNumCapturedHexagons(PlayerColor playerColor) throws IllegalArgumentException {
@@ -102,37 +59,28 @@ public class ModelAdapter implements ReadOnlyReversiModel {
 
   @Override
   public List<BoardPosn> getCapturedHexagons(PlayerColor playerColor) throws IllegalArgumentException {
-    //
     Colors color;
+    List<BoardPosn> posList=new ArrayList<>();
+
     if(playerColor==PlayerColor.BLACK){
       color=Colors.BLACK;
     }else{
       color=Colors.WHITE;
     }
+    List<List<IDisc>> board=model.getCurrBoard();
+    for(int row=0; row<board.size(); row++){
+      for(int col=0; col<board.get(row).size(); col++){
+        IDisc tile=board.get(row).get(col);
+        if(tile.getColor()==color){
+          int rowCoor= tile.getRow();
+          int colCoor=tile.getCol();
 
-
-    List<Tuple<Integer,Integer>> pieces=new ArrayList<>();
-    for(int row=0; row< model.getNumRows(); row++){
-      List<IDisc> currRow=model.getCurrBoard().get(row);
-      for(int col=0; col<currRow.size(); col++){
-        IDisc disc=currRow.get(col);
-        if(disc.getColor()==color) {
-          int x = disc.getRow();
-          int y = disc.getCol();
-          Tuple<Integer, Integer> coordinate = new Tuple<>(x, y);
-          pieces.add(coordinate);
+          BoardPosn pos=converter.tupleToBoardPosn(new Tuple<>(rowCoor,colCoor));
+          posList.add(pos);
         }
       }
     }
-    //convert my coordinate to their coordinate system
-    List<BoardPosn> provCoor=new ArrayList<>();
-    for(Tuple<Integer,Integer> piece:pieces){
-      BoardPosn coor=ourToProv.get(piece);
-      provCoor.add(coor);
-
-    }
-
-    return provCoor;
+    return posList;
   }
 
   @Override
@@ -143,14 +91,31 @@ public class ModelAdapter implements ReadOnlyReversiModel {
     }else{
       color=PlayerColor.WHITE;
     }
-
     return color;
   }
 
   @Override
   public List<BoardPosn> getPossibleMoves() {
-    return null;
+    List<List<IDisc>> board=model.getCurrBoard();
+    List<BoardPosn> validMoves=new ArrayList<>();
+
+    for(int row=0; row<board.size(); row++){
+      for(int col=0; col<board.get(row).size(); col++){
+        IDisc disc=board.get(row).get(col);
+        if(disc.getColor()==Colors.GRAY){
+          int rowCoor=disc.getRow();
+          int colCoor=disc.getCol();
+          Tuple<Integer,Integer> coor=new Tuple<>(rowCoor,colCoor);
+          if(model.isValidMove(coor)){
+            BoardPosn pos=converter.tupleToBoardPosn(coor);
+            validMoves.add(pos);
+          }
+        }
+      }
+    }
+    return validMoves;
   }
+
 
   @Override
   public GameStatus getGameStatus() {
@@ -160,7 +125,6 @@ public class ModelAdapter implements ReadOnlyReversiModel {
     if(this.getWinner()==null){
       return GameStatus.STALEMATE;
     }
-
 
     return GameStatus.PLAYING;
   }
@@ -182,7 +146,7 @@ public class ModelAdapter implements ReadOnlyReversiModel {
   @Override
   public PlayerColor getPlayerAt(BoardPosn posn) throws IllegalArgumentException {
 
-    Tuple<Integer,Integer> coor=provToOur.get(posn);
+    Tuple<Integer,Integer> coor=converter.boardPosntoTuple(posn);
     Colors color=this.model.getTileAt(coor.getFirst(), coor.getSecond()).getColor();
     if(color==Colors.BLACK){
       return PlayerColor.BLACK;
@@ -195,16 +159,18 @@ public class ModelAdapter implements ReadOnlyReversiModel {
 
   @Override
   public boolean isValidMove(BoardPosn posn) {
-    Tuple<Integer,Integer> coor=provToOur.get(posn);
+    Tuple<Integer,Integer> coor=converter.boardPosntoTuple(posn);
     return this.model.isValidMove(coor);
 
   }
 
+  //TODO METHOD
   @Override
   public List<BoardPosn> getPotentialCapturedCellsForMove(BoardPosn posn) {
     return null;
   }
 
+  //TODO FIGURE THIS OUT
   @Override
   public void addModelListener(ModelStatus listener) {
 
@@ -212,97 +178,15 @@ public class ModelAdapter implements ReadOnlyReversiModel {
 
   @Override
   public int getBoardSize() {
-    return model.getLength();
+    return (model.getLength()*2)-1;
   }
 
-  //TODO
+  //TODO FIGURE OUT IBOARD ASAP
   @Override
   public IBoard getBoard(){
-    return null;
+    IBoardImpl board= new IBoardImpl(model);
+    return board;
 
   }
-
-
-  private Tuple<Integer,Integer> boardPosntoTuple(BoardPosn coordinate) {
-    Map<BoardPosn, Tuple<Integer, Integer>> hexGridMap = mapBoardPosnBoardtoRowColBpard();
-    return hexGridMap.get(coordinate);
-  }
-
-
-
-  private Map<BoardPosn, Tuple<Integer, Integer>> mapBoardPosnBoardtoRowColBpard() {
-    int diameter = model.getNumRows();
-    List<Tuple<Integer, Integer>> rowColList = generateRowColCoordinates(diameter);
-    List<BoardPosn> cubeList = generateBoardPosnCoordinates(diameter);
-
-    Map<BoardPosn, Tuple<Integer, Integer>> hexGridMap = new HashMap<>();
-    for (int i = 0; i < rowColList.size(); i++) {
-      hexGridMap.put(cubeList.get(i), rowColList.get(i));
-    }
-
-    return hexGridMap;
-  }
-
-  private BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
-    Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = mapRowColBoardtoBoardPosnBoard();
-    return hexGridMap.get(coordinate);
-  }
-
-
-
-  private Map<Tuple<Integer, Integer>, BoardPosn> mapRowColBoardtoBoardPosnBoard() {
-    int diameter = model.getNumRows();
-    List<Tuple<Integer, Integer>> rowColList = generateRowColCoordinates(diameter);
-    List<BoardPosn> cubeList = generateBoardPosnCoordinates(diameter);
-
-    Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = new HashMap<>();
-    for (int i = 0; i < rowColList.size(); i++) {
-      hexGridMap.put(rowColList.get(i), cubeList.get(i));
-    }
-
-    return hexGridMap;
-  }
-
-  private List<Tuple<Integer, Integer>> generateRowColCoordinates(int diameter) {
-    List<Tuple<Integer, Integer>> rowColCoordinates = new ArrayList<>();
-    int radius = (diameter - 1) / 2;
-
-    for (int row = 0; row < diameter; row++) {
-      int cols = diameter - Math.abs(row - radius);
-      for (int col = 0; col < cols; col++) {
-        int adjustedCol;
-        if (row <= radius) {
-          adjustedCol = col;
-        } else {
-          adjustedCol = col + (row - radius);
-        }
-        rowColCoordinates.add(new Tuple<>(row, adjustedCol));
-      }
-    }
-
-    return rowColCoordinates;
-  }
-
-  private List<BoardPosn> generateBoardPosnCoordinates(int diameter) {
-    List<BoardPosn> cubeCoordinates = new ArrayList<>();
-    int radius = (diameter - 1) / 2;
-
-    for (int r = -radius; r <= radius; r++) {
-      for (int q = -radius; q <= radius; q++) {
-        int newR = r + radius;
-        int newQ = q + radius;
-        int s = -r - q;
-        if (Math.abs(s) <= radius) {
-          int newS = - newQ - newR;
-          cubeCoordinates.add(new BoardPosn(newQ, newR, newS));
-        }
-      }
-    }
-
-    return cubeCoordinates;
-  }
-
-
-
 
 }
