@@ -7,16 +7,14 @@ import java.util.Map;
 
 import cs3500.reversi.model.BasicReversi;
 import cs3500.reversi.model.ModelAdapter;
-import cs3500.reversi.model.ReadonlyReversiModel;
 import cs3500.reversi.model.Tuple;
+import cs3500.reversi.provider.controller.ReversiController;
 import cs3500.reversi.provider.model.BoardPosn;
 import cs3500.reversi.provider.view.PlayerAction;
 
 public class Converter {
 
-
   ReadonlyReversiModel model;
-
 
 
 
@@ -25,11 +23,6 @@ public class Converter {
     this.model = model;
   }
 
-  /**
-   * Converts the provider coordiante to our coordinate
-   * @param coordinate
-   * @return
-   */
   public Tuple<Integer,Integer> boardPosntoTuple(BoardPosn coordinate) {
     Map<BoardPosn, Tuple<Integer, Integer>> hexGridMap = mapBoardPosnBoardtoRowColBpard();
     return hexGridMap.get(coordinate);
@@ -49,12 +42,6 @@ public class Converter {
 
     return hexGridMap;
   }
-
-  /**
-   * Converts our coordinate to their coordinate syste
-   * @param coordinate our coordinate
-   * @return their coordinate
-   */
 
   public BoardPosn tupleToBoardPosn(Tuple<Integer, Integer> coordinate) {
     Map<Tuple<Integer, Integer>, BoardPosn> hexGridMap = mapRowColBoardtoBoardPosnBoard();
@@ -118,9 +105,5 @@ public class Converter {
 
 
 }
-
-
-
-
 
 

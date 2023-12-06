@@ -99,3 +99,11 @@ In addition in order to have proper communication between the model and the cont
 the model to have an add listeners method in order to add different and multiple controllers. In addition to that method,
 we also created multiple small private helper methods within the model to send notifications to the the listeners and trigger
 their methods.
+
+
+Reversi Part 4:
+
+Provider Code Notes:
+
+Their getBoard method return an IBoard which has it's own getBoard method.
+
