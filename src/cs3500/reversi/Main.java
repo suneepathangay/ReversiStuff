@@ -7,12 +7,10 @@ import cs3500.reversi.controller.Player;
 import cs3500.reversi.model.BasicReversi;
 import cs3500.reversi.model.CaptureStrategy;
 import cs3500.reversi.model.Colors;
-import cs3500.reversi.model.ReadonlyReversiModel;
 import cs3500.reversi.model.Reversi;
 import cs3500.reversi.model.Strategy;
-import cs3500.reversi.provider.view.ReversiFrame;
-import cs3500.reversi.provider.view.ReversiFrameView;
 import cs3500.reversi.view.Frame;
+
 
 
 /**
