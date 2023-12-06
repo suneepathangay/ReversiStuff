@@ -98,6 +98,23 @@ public class IBoardImpl implements IBoard {
 
   @Override
   public List<BoardPosn> getCorners() {
-    return null;
+    List<Tuple<Integer, Integer>> cornerCoordinates = new ArrayList<>();
+    List<BoardPosn> cornerCoordinatesBoardPosn = new ArrayList<>();
+    int numRows = model.getNumRows();
+    int size = model.getLength();
+    cornerCoordinates.add(new Tuple<>(0, 0));
+    cornerCoordinates.add(new Tuple<>(0, size - 1));
+    cornerCoordinates.add(new Tuple<>((numRows - 1) / 2, 0));
+    cornerCoordinates.add(new Tuple<>((numRows - 1) / 2, numRows - 1));
+    cornerCoordinates.add(new Tuple<>(numRows - 1, size - 1));
+    cornerCoordinates.add(new Tuple<>(numRows - 1, numRows - 1));
+
+
+    for (Tuple<Integer, Integer> t:
+         cornerCoordinates) {
+      cornerCoordinatesBoardPosn.add(converter.tupleToBoardPosn(t));
+    }
+
+    return cornerCoordinatesBoardPosn;
   }
 }
