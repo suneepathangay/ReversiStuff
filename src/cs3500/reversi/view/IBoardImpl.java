@@ -64,9 +64,7 @@ public class IBoardImpl implements IBoard {
   @Override
   public boolean inBounds(BoardPosn cell) {
     int radius = model.getNumRows()/2;
-
-    return (cell.q < radius) && (cell.q >= 0) && (cell.r < model.getNumRows()) && (cell.r >= 0)
-    && (Math.abs(cell.s) < model.getNumRows() + radius) && (Math.abs(cell.s)>=radius);
+    return (Math.abs(cell.s) < model.getNumRows() + radius) && (Math.abs(cell.s)>=radius);
   }
 
   @Override
