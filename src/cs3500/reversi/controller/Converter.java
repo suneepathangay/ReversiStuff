@@ -7,6 +7,7 @@ import java.util.Map;
 
 import cs3500.reversi.model.BasicReversi;
 import cs3500.reversi.model.ModelAdapter;
+import cs3500.reversi.model.ReadonlyReversiModel;
 import cs3500.reversi.model.Tuple;
 import cs3500.reversi.provider.controller.ReversiController;
 import cs3500.reversi.provider.model.BoardPosn;
