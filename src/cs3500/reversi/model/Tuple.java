@@ -1,5 +1,7 @@
 package cs3500.reversi.model;
 
+import java.util.Objects;
+
 /**
  * Class for the Tuple class that represents a coordinate.
  *
@@ -32,4 +34,20 @@ public class Tuple<A, B> {
   public Integer getSecond() {
     return second;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Tuple<?, ?> tuple = (Tuple<?, ?>) o;
+    return Objects.equals(first, tuple.first) &&
+            Objects.equals(second, tuple.second);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(first, second);
+  }
+
+
 }

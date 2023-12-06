@@ -28,7 +28,7 @@ public class Main {
 
     Player player = new HumanPlayer(model, Colors.BLACK);
     Player player2 = new HumanPlayer(model, Colors.WHITE);
-    Strategy strat=new CaptureStrategy();
+    Strategy strat = new CaptureStrategy();
     Player ai1=new AIPlayer(model,strat,Colors.BLACK);
     Player ai2=new AIPlayer(model,strat,Colors.WHITE);
     Controller controller = new Controller(model, view, ai1);
